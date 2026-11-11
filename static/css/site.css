@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #26332d; background: #faf9f4; line-height: 1.6; }
+.container { width: min(100% - 2rem, 960px); margin: 0 auto; }
+.site-header { background: #26332d; color: white; }
+.nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.brand { color: #f4ce14; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+nav { display: flex; gap: 1.2rem; }
+nav a { color: white; text-decoration: none; }
+.hero { padding: 5rem 0; min-height: 70vh; }
+.eyebrow { color: #657b37; text-transform: uppercase; letter-spacing: .12em; font-weight: bold; }
+h1 { font-size: clamp(2.4rem, 6vw, 4.5rem); line-height: 1.05; max-width: 700px; margin: .4rem 0 1rem; }
+.actions { display: flex; flex-wrap: wrap; gap: .8rem; margin: 2rem 0; }
+.button { display: inline-block; padding: .8rem 1.2rem; background: #495e35; color: white; border-radius: 6px; text-decoration: none; }
+.button.secondary { background: #f4ce14; color: #26332d; }
+.api-note { background: white; border-left: 5px solid #f4ce14; padding: 1rem 1.4rem; margin-top: 2rem; }
+.site-footer { background: #26332d; color: white; padding: 1.5rem 0; }
+@media (max-width: 560px) { .nav { align-items: flex-start; flex-direction: column; padding: 1rem 0; } nav { flex-wrap: wrap; } }

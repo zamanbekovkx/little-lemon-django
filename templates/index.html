@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Lemon | Restaurant</title>
+  <link rel="stylesheet" href="{% static 'css/site.css' %}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">Little Lemon</a>
+      <nav aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/restaurant/menu/">Menu API</a>
+        <a href="/admin/">Admin</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container hero">
+    <p class="eyebrow">Fresh food. Warm welcome.</p>
+    <h1>Welcome to Little Lemon</h1>
+    <p>Explore our menu and use our API to make a table booking.</p>
+    <div class="actions">
+      <a class="button" href="/restaurant/menu/">View menu data</a>
+      <a class="button secondary" href="/api-token-auth/">Token endpoint</a>
+    </div>
+    <section class="api-note">
+      <h2>Developer API</h2>
+      <p>Menu: <code>GET /restaurant/menu/</code></p>
+      <p>Bookings: <code>/restaurant/booking/</code> (token required)</p>
+      <p>Register: <code>POST /auth/register/</code></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© Little Lemon Restaurant · Fresh ingredients, thoughtful cooking.</div>
+  </footer>
+</body>
+</html>
